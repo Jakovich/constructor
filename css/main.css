@@ -24,6 +24,8 @@ audio:not([controls]) {
 html {
     font-family: sans-serif;
 }
+
+
 body {
     margin: 0;
 }
@@ -198,8 +200,8 @@ body {
 }
 .container, .top-nav, #content-wrp, main, .partners, .news-block {
     margin: 0 auto;
-    min-width: 1000px;
-    width: 80%;
+    /*min-width: 1000px;*/
+    /*width: 80%;*/
 }
 h1, h2, h3, h4, h5, h6 {
     color: #000;
@@ -1004,6 +1006,7 @@ main .content h2 {
     margin-top: 40px;
     min-height: 500px;
     position: relative;
+    padding: 0 10px;
 }
 #constructor.hidden {
     display: none;
@@ -1118,9 +1121,9 @@ main .content h2 {
     border-bottom: 1px dashed red;
     color: red;
 }
-#constructor .select-row {
+/*#constructor .select-row {
     width: 740px;
-}
+}*/
 #constructor .select-row td:nth-child(2) {
     max-width: 150px;
 }
@@ -1162,7 +1165,7 @@ main .content h2 {
 }
 #constructor .total-wrp {
     padding-top: 50px;
-    width: 740px;
+    /*width: 740px;*/
 }
 #constructor .total-wrp a {
     display: inline-block;
@@ -2934,3 +2937,40 @@ h2, h3 {
 .qtip:not(.ie9haxors) div.qtip-content, .qtip:not(.ie9haxors) div.qtip-titlebar {
     filter: none;
 }
+
+@media screen and (max-width: 910px) {
+  #constructor .select-row td {
+    display: block;
+  }
+  
+  #constructor .select-row td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 655px) {
+  #constructor .color-block {
+    display: block;
+  }
+  
+  
+  #constructor .switch {
+    margin-left: 17px;
+  }
+  
+  .color-popup {
+    z-index: 5;
+  }
+  
+  
+  #constructor .checkbox-wrp {
+    width: 150px;
+  }
+  
+  .step {
+    min-width: 220px;
+  }
+}
+

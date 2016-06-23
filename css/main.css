@@ -1452,6 +1452,17 @@ main .content h2 {
     background: #eee none repeat scroll 0 0;
     border: 1px solid #ccc;
 }
+
+#popup-select[data-target='top'] img {
+  width: 200px;
+  height: 216px;
+}
+
+#popup-select[data-target='bottom'] img {
+  width: 200px;
+  height: 152px;
+}
+
 .footer-wrp {
     left: 0;
     margin-top: -227px;

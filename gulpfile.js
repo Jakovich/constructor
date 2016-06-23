@@ -11,8 +11,8 @@ gulp.task("show", function(){
   });
   
   
-  gulp.watch("*.html", ["copyHtml"]).on("change", server.reload);
-  gulp.watch("js/*.js", ["minjs"]).on("change", server.reload);
+  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("js/*.js").on("change", server.reload);
   
 });
 

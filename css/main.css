@@ -2938,6 +2938,10 @@ h2, h3 {
     filter: none;
 }
 
+#colorbox {
+  z-index: 1000;
+}
+
 @media screen and (max-width: 910px) {
   #constructor .select-row td {
     display: block;

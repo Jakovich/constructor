@@ -19,7 +19,7 @@
     */
     var app = {
     	init: function() {
-            fancy.init();
+            //fancy.init();
             form.init();
 
             var $preview = $('.preview');
@@ -198,7 +198,7 @@
     /**
     * INITIALIZE FANCYBOX
     */
-    var fancy = {
+    /*var fancy = {
         fancyAddDots: function() {
                 if(this.group.length < 2) return;
                 var list = $("#fancy-dots");
@@ -240,7 +240,7 @@
             });
 
         }
-    }
+    }*/
 
   $(document).ready(app.init)
 

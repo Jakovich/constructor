@@ -2783,6 +2783,9 @@ h2, h3 {
     padding-bottom: 10px;
   }
   
+  #popup-select {
+    width: 500px;
+  }
 }
 
 @media screen and (max-width: 655px) {
@@ -2807,5 +2810,7 @@ h2, h3 {
   .step {
     min-width: 220px;
   }
+  
+  
 }
 

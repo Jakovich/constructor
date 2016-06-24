@@ -506,7 +506,8 @@
 				$('.'+targetName+'-img').attr('src', $img);
 				$('.'+targetName+'-img-inp').attr('value', $img);
 				$('.'+targetName+'-input').attr('value', elementId);
-				$.fancybox.close();
+				//$.fancybox.close();
+                $.colorbox.close()
 				_this.changeMaket();
 			}
 		});

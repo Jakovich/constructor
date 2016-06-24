@@ -550,7 +550,7 @@ main .content {
 }
 main .content img {
     max-height: 90vh;
-    max-width: 100%;
+    /*max-width: 100%;*/
 }
 main .content.full-width {
     max-width: 100%;

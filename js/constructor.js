@@ -21,6 +21,7 @@
     	init: function() {
             //fancy.init();
             form.init();
+            color.init();
 
             var $preview = $('.preview');
             $preview.stick_in_parent({
@@ -198,6 +199,8 @@
     /**
     * INITIALIZE FANCYBOX
     */
+    
+    
     /*var fancy = {
         fancyAddDots: function() {
                 if(this.group.length < 2) return;
@@ -241,6 +244,18 @@
 
         }
     }*/
+    
+    /**
+    * INITIALIZE COLORBOX
+    */
+    
+    var color = {
+      init: function() {
+        $(".select-popup").colorbox({ 
+          opacity: 0.5
+        });
+      }
+    }
 
   $(document).ready(app.init)
 

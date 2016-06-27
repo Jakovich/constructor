@@ -10,6 +10,8 @@ var rename = require("gulp-rename");
 
 var copy = require("gulp-contrib-copy");
 
+var postcss = require("gulp-postcss");
+
 var clean = require("gulp-contrib-clean");
 
 var csso = require("gulp-csso");
@@ -17,19 +19,13 @@ var csso = require("gulp-csso");
 var autoprefixer = require("autoprefixer");
 
 
-gulp.task("concat", function() {
+gulp.task("minjs", function() {
   gulp.src("./js/src/*.js")
     .pipe(concat("main.js"))
     .pipe(gulp.dest("build/js/"))
-});
-
-
-gulp.task("minjs", function(){
-  gulp.src("./js/src/*.js")
-  .pipe(uglify())
-  .pipe(rename("main.min.js"))
-  .pipe(gulp.dest("build/js/"))
-  
+    .pipe(rename("main.min.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js/"))
 });
 
 
@@ -43,7 +39,7 @@ gulp.task("copyJslib", function() {
 
 gulp.task("style", function(){
   gulp.src("css/main.css")
-  /*.pipe(postcss([
+  .pipe(postcss([
     autoprefixer({browsers: [
       "last 1 version",
       "last 2 Chrome versions",
@@ -53,7 +49,7 @@ gulp.task("style", function(){
     ]})
     
     
-  ]))*/
+  ]))
   
   .pipe(gulp.dest("build/css"))
   .pipe(csso())
@@ -97,7 +93,7 @@ gulp.task("show", function(){
   
 });
 
-gulp.task("build", ["clean", "copyHtml", "copyAssets", "concat", "minjs", "copyJslib", "style"]);
+gulp.task("build", ["clean", "copyHtml", "copyAssets", "minjs", "copyJslib", "style"]);
 
 
 

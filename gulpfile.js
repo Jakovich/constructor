@@ -90,6 +90,7 @@ gulp.task("show", function(){
   
   gulp.watch("*.html", ["copyHtml"]).on("change", server.reload);
   gulp.watch("js/src/*.js", ["minjs"]).on("change", server.reload);
+  gulp.watch("css/*.css", ["style"]).on("change", server.reload);
   
 });
 

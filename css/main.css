@@ -139,10 +139,10 @@ table {
     border-spacing: 0;
 }
 .yel-grd, .popup, #constructor .h-span span, #popup-select, .complectsCountBtn, .submitDiscount, .choose-file, .btn::after {
-    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #f9c203 0%, #ef940b 100%) repeat scroll 0 0;
+    background: #8ec63f;
 }
 .yel-grd-inv, .top-nav > ul li.active a, .tab-links li.active, .content ol > li::before, .content ul:not([class]) > li::before, #popup-select .articul {
-    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ef940b 0%, #f9c203 100%) repeat scroll 0 0;
+    background: #8ec63f;
 }
 .icon-block-shadow, .section.about .news::before, .order-help::before {
     background-image: url("../img/sprite.png");
@@ -163,11 +163,10 @@ table {
     width: 37px;
 }
 .icon-price-tag, #constructor .tag {
-    background-image: url("../img/sprite.png");
-    background-position: 0 -115px;
     height: 119px;
     width: 228px;
 }
+
 .icon-question, .prefooter .questions::before {
     background-image: url("../img/sprite.png");
     background-position: 0 -53px;
@@ -1064,7 +1063,7 @@ main .content h2 {
     font-size: 24px;
     font-style: italic;
     font-weight: bold;
-    margin-left: -60px;
+    margin-left: 0;
 }
 #constructor .h-span span {
     border-radius: 50%;
@@ -1172,16 +1171,19 @@ main .content h2 {
     vertical-align: middle;
 }
 #constructor .total-wrp .next {
-    color: #2693d1;
-    font-size: 24px;
-    font-style: italic;
-    font-weight: bold;
-    margin-left: 40px;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: #8ec63f;
+    padding: 8px 17px;
+    border-radius: 25px;
+    font-weight: normal;
     position: relative;
-    text-decoration: underline;
+    margin-left: 11px;
     text-transform: uppercase;
-    top: -20px;
+    top: -7px;
 }
+
+
 #constructor .goNextSection {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 0 none;
@@ -1192,17 +1194,24 @@ main .content h2 {
 #constructor .goPrevSection {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 0 none;
-    color: #a3a3a3;
-    display: inline-block;
-    font-size: 24px;
-    font-style: italic;
-    font-weight: bold;
-    margin-left: 40px;
-    margin-right: 60px;
+    top: 32px;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #8ec63f;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: normal;
+    
     position: relative;
-    text-decoration: underline;
+    
     text-transform: uppercase;
-    top: 5px;
+    
+    display: inline-block;
+  
+    position: relative;
+    
+    text-transform: uppercase;
+    
     vertical-align: middle;
 }
 #constructor .form-screen {
@@ -1219,22 +1228,22 @@ main .content h2 {
 }
 #constructor .tag span {
     display: inline-block;
-    width: 100%;
+    
 }
 #constructor .tag .description {
-    font-style: italic;
+    
     line-height: 1.2em;
     margin-bottom: 15px;
     margin-top: 10px;
 }
 #constructor .tag .price {
-    font-size: 18px;
-    font-style: italic;
-    line-height: 1em;
+    font-size: 32px;
+    color: #606060;
 }
 #constructor .tag .price b {
     font-size: 36px;
-    font-weight: bold;
+    font-weight: normal;
+    color: #606060;
 }
 #constructor .complects .inline-block {
     display: inline-block;
@@ -1611,11 +1620,9 @@ footer .order-form {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    border-color: -moz-use-text-color -moz-use-text-color #8d5707 #8d5707;
-    border-image: none;
-    border-radius: 0 3px 3px 0;
-    border-style: none none solid solid;
-    border-width: 0 0 2px 1px;
+    outline: none;
+    border: none;
+  color: #ffffff;
     font-size: 12px;
     font-weight: 500;
     margin-left: -8px;
@@ -1626,7 +1633,7 @@ footer .order-form {
     transition: all 0.2s ease-out 0s;
 }
 .choose-file {
-    color: #000;
+    color: #ffffff;
     margin-left: 10px;
     text-decoration: none;
 }

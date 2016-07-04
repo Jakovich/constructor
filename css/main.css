@@ -925,9 +925,11 @@ main .content h2 {
 }
 .checkbox-dyn {
     width: 50%;
+    text-align: left;
 }
 .checkbox-dyn .pick-color {
     padding-left: 0 !important;
+    text-align: left;
 }
 .order-help {
     background: #f4f1dd none repeat scroll 0 0;
@@ -1384,6 +1386,7 @@ main .content h2 {
     position: absolute;
     top: 100%;
     width: 140px;
+    z-index: 100;
 }
 .color-popup .color-option {
     margin: 3px;
@@ -2899,6 +2902,15 @@ h2, h3 {
 .choice img {
   display: block;
   margin: 0 auto;
+}
+
+.shirtInserts {
+  width: 320px;
+}
+
+#constructor .shirtInserts td.checkbox-dyn {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 

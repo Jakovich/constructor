@@ -150,124 +150,26 @@
 			        <button class="default-reset default-step-1" type="button">сбросить настройки</button>
                       <!-- constructor data -->
 
-                    <table class="select-row">
-                      <tbody>
-                         <tr class="row thirt">
-                          <td>
+                    <div class="select-row">
+                      
+                         <div class="row thirt">
+                          <div class="tshirt-preview">
 						    <a class="select-popup" href="top.html">
 						      <img width="87" height="84" alt="" src="assets/images/blank(1).png" class="top-img">
                               <input type="hidden" value="AS44" name="top[tshirt][typeID]" class="top-input">
                               <input type="hidden" value="990" name="top[tshirt][price]">
 						      <input type="hidden" value="/assets/images/blank(1).png" name="top[tshirt][img]" class="top-img-inp">
 						    </a>
-                          </td>
-                          <td>
                             <p class="h2-span">Тип футболки
 						      <br><a class="select-popup" href="top.html">выбрать другую</a>
                             </p>
-                          
-                          
-                            <div class="color-block setted">
-                              <button data-source="top::tshirt" class="pick-color" type="button">
-                                <span class="color" style="background-color: rgb(255, 255, 255);"></span>
-                                <span class="title">Основной цвет</span>
-                              </button>
-                              <input type="hidden" value="#fff" name="top[tshirt][color][]">
-                            </div>
-                            <button class="switch" type="button"></button>
-                            <div class="color-block extra-color setted" style="opacity: 0.5;">
-                              <button data-source="top::tshirt" class="pick-color" type="button" disabled="disabled">
-                                <span class="color" style="background-color: rgb(255, 255, 255);"></span>
-                                <span class="title">Дополнительный цвет</span>
-                              </button>
-                              <input type="hidden" value="#fff" name="top[tshirt][color][]">
-                            </div>
-                          </td>
-                        </tr>
-
-                        <tr class="row">
-                          <td class="choice neck">
-                             <p class="h2-span">Воротник и манжеты
-                            </p>
-                            <img width="87" alt="" src="img/neck.png">
-                            <div class="color-block setted">
-                              <button data-source="top::tshirt" class="pick-color" type="button">
-                                <span class="color" style="background-color: rgb(255, 255, 255);"></span>
-                                <span class="title">цвет</span>
-                              </button>
-                              <input type="hidden" value="#fff" name="top[neck][color][]">
-                            </div>
-                          </td>
-                          <td class="choice sleeves">
-                            <p class="h2-span">Рукава</p>
-                            <img width="87" alt="" src="img/sleeves.png">
-                            <div class="color-block setted">
-                              <button data-source="top::tshirt" class="pick-color" type="button">
-                                <span class="color" style="background-color: rgb(255, 255, 255);"></span>
-                                <span class="title">Правый рукав</span>
-                              </button>
-                              <input type="hidden" value="#fff" name="top[sleeve][color][]">
-                            </div>
-                            <button class="switch" type="button"></button>
-                            <div class="color-block setted">
-                              <button data-source="top::tshirt" class="pick-color" type="button">
-                                <span class="color" style="background-color: rgb(255, 255, 255);"></span>
-                                <span class="title">Левый рукав</span>
-                              </button>
-                              <input type="hidden" value="#fff" name="top[sleeve][color][]">
-                            </div>
-                          </td>
-                          <td class="choice shirtInserts">
-                            <p class="h2-span">Вставки</p>
-                            <img width="87" alt="" src="img/inserts.png">
-                            <table style="width: 100%;">
-                              <tbody>
-                                <tr>
-                                  <td class="checkbox-dyn">
-                                    <div class="checkbox-wrp">
-                                      <input type="checkbox" value="true" name="top[sideInserts][insert]" class="checkbox" id="sideInserts">
-                                      <label for="sideInserts">вставки на боках</label>
-                                    </div>
-                                    <br>
-                                    <div class="color-block checkbox-target setted" style="display: none;">
-                                      <button data-source="top::tshirt" class="pick-color" type="button">
-                                        <span class="color" style="background-color: rgb(255, 255, 255);"></span>
-                                        <span class="title">Цвет боковых вставок</span>
-                                      </button>
-                                      <input type="hidden" value="#fff" name="top[sideInserts][color][]">
-                                    </div>
-                                  </td>
-                                  <td class="checkbox-dyn">
-                                    <div class="checkbox-wrp">
-                                      <input type="checkbox" value="true" name="top[sleeveInserts][insert]" class="checkbox" id="sleeveInserts">
-                                      <label for="sleeveInserts">вставки на плечах</label>
-                                    </div>
-                                    <br>
-                                    <div class="color-block checkbox-target setted" style="display: none;">
-                                      <button data-source="top::tshirt" class="pick-color" type="button">
-                                        <span class="color" style="background-color: rgb(255, 255, 255);"></span>
-                                        <span class="title">Цвет плечевых вставок</span>
-                                      </button>
-                                      <input type="hidden" value="#fff" name="top[sleeveInserts][color][]">
-                                    </div>
-                                  </td>
-                                </tr>
-
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-
-                        
-                        
-                      </tbody>
-                    </table>
-                    <div id="popup-select" class="select-tshirt" data-target="top">
+                          </div>
+                            <div id="popup-select" class="select-tshirt" data-target="top">
                       <div class="tshirt-slider">
                       <div class="tshirt-slider__items">
                         <ul class="tshirt-slider__wrapper">
                           <li>
-                            <button type="button" data-id="AS44" data-url="assets/top/blank">
+                            <button type="button" data-id="AS44" data-url="assets/top/blank.html">
                               <img src="assets/images/blank(1).png"  alt="">
                               <span class="articul">Арт. AS44</span>
                             </button>
@@ -384,10 +286,110 @@
                         </ul>
                        </div>
                        <div class="tshirt-slider__nav tshirt-slider__nav--prev"></div>
-                        <div class="tshirt-slider__nav tshirt-slider__nav--next">x</div>
+                        <div class="tshirt-slider__nav tshirt-slider__nav--next"></div>
                       </div>
                       
                     </div>
+                          <div>
+                            
+                          
+                          
+                            <div class="color-block setted">
+                              <button data-source="top::tshirt" class="pick-color" type="button">
+                                <span class="color" style="background-color: rgb(255, 255, 255);"></span>
+                                <span class="title">Основной цвет</span>
+                              </button>
+                              <input type="hidden" value="#fff" name="top[tshirt][color][]">
+                            </div>
+                            <button class="switch" type="button"></button>
+                            <div class="color-block extra-color setted" style="opacity: 0.5;">
+                              <button data-source="top::tshirt" class="pick-color" type="button" disabled="disabled">
+                                <span class="color" style="background-color: rgb(255, 255, 255);"></span>
+                                <span class="title">Дополнительный цвет</span>
+                              </button>
+                              <input type="hidden" value="#fff" name="top[tshirt][color][]">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="choice neck">
+                             <p class="h2-span">Воротник и манжеты
+                            </p>
+                            <img width="87" alt="" src="img/neck.png">
+                            <div class="color-block setted">
+                              <button data-source="top::tshirt" class="pick-color" type="button">
+                                <span class="color" style="background-color: rgb(255, 255, 255);"></span>
+                                <span class="title">цвет</span>
+                              </button>
+                              <input type="hidden" value="#fff" name="top[neck][color][]">
+                            </div>
+                          </div>
+                          <div class="choice sleeves">
+                            <p class="h2-span">Рукава</p>
+                            <img width="87" alt="" src="img/sleeves.png">
+                            <div class="color-block setted">
+                              <button data-source="top::tshirt" class="pick-color" type="button">
+                                <span class="color" style="background-color: rgb(255, 255, 255);"></span>
+                                <span class="title">Правый рукав</span>
+                              </button>
+                              <input type="hidden" value="#fff" name="top[sleeve][color][]">
+                            </div>
+                            <button class="switch" type="button"></button>
+                            <div class="color-block setted">
+                              <button data-source="top::tshirt" class="pick-color" type="button">
+                                <span class="color" style="background-color: rgb(255, 255, 255);"></span>
+                                <span class="title">Левый рукав</span>
+                              </button>
+                              <input type="hidden" value="#fff" name="top[sleeve][color][]">
+                            </div>
+                          </div>
+                          <div class="choice shirtInserts">
+                            <p class="h2-span">Вставки</p>
+                            <img width="87" alt="" src="img/inserts.png">
+                            <table style="width: 100%;">
+                              <tbody>
+                                <tr>
+                                  <td class="checkbox-dyn">
+                                    <div class="checkbox-wrp">
+                                      <input type="checkbox" value="true" name="top[sideInserts][insert]" class="checkbox" id="sideInserts">
+                                      <label for="sideInserts">вставки на боках</label>
+                                    </div>
+                                    <br>
+                                    <div class="color-block checkbox-target setted" style="display: none;">
+                                      <button data-source="top::tshirt" class="pick-color" type="button">
+                                        <span class="color" style="background-color: rgb(255, 255, 255);"></span>
+                                        <span class="title">Цвет боковых вставок</span>
+                                      </button>
+                                      <input type="hidden" value="#fff" name="top[sideInserts][color][]">
+                                    </div>
+                                  </td>
+                                  <td class="checkbox-dyn">
+                                    <div class="checkbox-wrp">
+                                      <input type="checkbox" value="true" name="top[sleeveInserts][insert]" class="checkbox" id="sleeveInserts">
+                                      <label for="sleeveInserts">вставки на плечах</label>
+                                    </div>
+                                    <br>
+                                    <div class="color-block checkbox-target setted" style="display: none;">
+                                      <button data-source="top::tshirt" class="pick-color" type="button">
+                                        <span class="color" style="background-color: rgb(255, 255, 255);"></span>
+                                        <span class="title">Цвет плечевых вставок</span>
+                                      </button>
+                                      <input type="hidden" value="#fff" name="top[sleeveInserts][color][]">
+                                    </div>
+                                  </td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+                        
+                        
+                      
+                    </div>
+                  
                   </form>
                 </div>
 

@@ -1182,7 +1182,7 @@ main .content h2 {
     opacity: 1;
 }
 #constructor .total-wrp {
-    padding-top: 50px;
+    padding-top: 0;
     /*width: 740px;*/
 }
 #constructor .total-wrp a {
@@ -2746,6 +2746,7 @@ h2, h3 {
     Colorbox Core Style:
     The following CSS is consistent between example themes and should not be altered.
 */
+/*
 #colorbox, #cboxOverlay, #cboxWrapper {
     position:absolute; top:0; left:0; z-index:9999; overflow:hidden; -webkit-transform: translate3d(0,0,0);
 }
@@ -2801,12 +2802,13 @@ h2, h3 {
     -moz-box-sizing: content-box; 
     -webkit-box-sizing: content-box;
 }
-
+*/
 /* 
     User Style:
     Change the following styles to modify the appearance of Colorbox.  They are
     ordered & tabbed in a way that represents the nesting of the generated HTML.
 */
+/*
 #cboxOverlay {
     background:#000; 
     opacity: 0.9; 
@@ -2850,6 +2852,7 @@ h2, h3 {
 }
 
   /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+/*
 #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
     border: 0; 
     padding: 0; 
@@ -2862,8 +2865,10 @@ h2, h3 {
     top: -25px; 
     background: url('../img/colorbox/controls.png') no-repeat 0 0;
 }
+*/
         
         /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+/*
 #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {
     outline:0;
 }
@@ -2909,7 +2914,7 @@ h2, h3 {
 .cboxSlideshow_off #cboxSlideshow:hover {
   background-position: -75px -25px;
 }
-
+*/
 
 .choice {
   vertical-align: top;
@@ -2923,7 +2928,7 @@ h2, h3 {
 }
 
 .shirtInserts {
-  width: 320px;
+  width: 300px;
 }
 
 #constructor .total-wrp__first {

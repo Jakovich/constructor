@@ -138,7 +138,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-.yel-grd, .popup, #constructor .h-span span, #popup-select, .complectsCountBtn, .submitDiscount, .choose-file, .btn::after {
+.yel-grd, .popup, #constructor .h-span span, .complectsCountBtn, .submitDiscount, .choose-file, .btn::after {
     background: #8ec63f;
 }
 .yel-grd-inv, .top-nav > ul li.active a, .tab-links li.active, .content ol > li::before, .content ul:not([class]) > li::before, #popup-select .articul {
@@ -155,7 +155,24 @@ table {
     background-position: 0 0;
     height: 16px;
     width: 20px;
+    
 }
+
+.switch--vertical {
+  transform: rotate(90deg);
+  top: 30px;
+  position: absolute;
+  right: 0;
+}
+
+.color-choice {
+  width: 210px;
+  position: relative;
+}
+
+
+
+
 .icon-header-phone, header .phone-block .phone::before, footer .phone-block .phone::before {
     background-image: url("../img/sprite.png");
     background-position: 0 -16px;
@@ -834,11 +851,11 @@ main .content h2 {
 .content ul:not([class]) {
     list-style: outside none none;
 }
-.content ul:not([class]) > li {
+/*.content ul:not([class]) > li {
     padding-left: 14px;
     position: relative;
-}
-.content ul:not([class]) > li::before {
+}*/
+/*.content ul:not([class]) > li::before {
     border-radius: 50%;
     content: "";
     display: block;
@@ -847,7 +864,7 @@ main .content h2 {
     position: absolute;
     top: 8px;
     width: 6px;
-}
+}*/
 .gallery {
     font-size: 1px;
 }
@@ -1415,7 +1432,7 @@ main .content h2 {
 }
 #popup-select {
     padding: 10px;
-    width: 900px;
+   
 }
 #popup-select .articul {
     bottom: 0;
@@ -1448,23 +1465,24 @@ main .content h2 {
 #popup-select ul {
     background: #fff none repeat scroll 0 0;
     border-radius: 10px;
-    box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.2) inset;
-    list-style: outside none none;
+    list-style: none;
     margin: 0;
-    padding: 10px;
+    padding: 0;
 }
 #popup-select ul li {
     float: left;
+    padding-right: 20px;
 }
 #popup-select ul li button {
     background: #fff none repeat scroll 0 0;
-    border: 1px dashed #ccc;
+    border: 4px dotted #007536;
+    padding: 20px 10px;
     position: relative;
     transition: all 0.2s ease-out 0s;
 }
 #popup-select ul li button:hover {
-    background: #eee none repeat scroll 0 0;
-    border: 1px solid #ccc;
+    background: #e7f6d2 none repeat scroll 0 0;
+    border: 4px dotted #007536;
 }
 
 #popup-select[data-target='top'] img {
@@ -2908,9 +2926,17 @@ h2, h3 {
   width: 320px;
 }
 
+#constructor .total-wrp__first {
+  margin-left: 50px;
+}
+
 #constructor .shirtInserts td.checkbox-dyn {
   padding-left: 0;
   padding-right: 0;
+}
+
+.short-preview {
+  display: none;
 }
 
 

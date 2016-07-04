@@ -136,6 +136,7 @@
                   </g>
                 </g>
               </svg>
+              
             </div>
 		    <div class="form">
 
@@ -269,10 +270,10 @@
 
                   <form data-section="bottom" class="fpc-section" method="post" action="">
 		            <button class="default-reset default-step-2" type="button">сбросить настройки</button>
-                    <table class="select-row">
-                      <tbody>
-                        <tr class="row shorts">
-                          <td>
+                    <div class="select-row">
+                     
+                        <div class="row shorts">
+                          <div class="short-preview">
                             <p class="h2-span">Тип шорт
                               <br>
                               <a href="bottom.html" class="select-popup">выбрать другие</a>
@@ -283,12 +284,36 @@
                               <input type="hidden" value="0" name="bottom[shorts][price]">
 				              <input type="hidden" value="/assets/images/sides.png" name="bottom[shorts][img]" class="bottom-img-inp">
 						    </a>
-                          </td>
+                         
                           
+                          </div>
                           
-                        </tr>
-                        <tr>
-                          <td>
+                          <div id="popup-select" data-target="bottom" class="select-shorts">
+                            <ul>
+                              <li>
+                                <button type="button" data-id="AS42" data-url="assets/bottom/lampasy.html">
+                                    <img src="assets/images/sides.png"  alt="">
+                                    <span class="articul">Арт. AS42</span>
+                                </button>
+                              </li>
+                              <li>
+                                <button type="button" data-id="AS43" data-url="assets/bottom/manzhety.html">
+                                  <img src="assets/images/mangets.png"  alt="">
+                                  <span class="articul">Арт. AS43</span>
+                                </button>
+                              </li>
+                              <li>
+                                <button type="button" data-id="AS45" data-url="assets/bottom/blank.html">
+                                  <img src="assets/images/blank_shirts.png"  alt="">
+                                  <span class="articul">Арт. AS45</span>
+                                </button>
+                              </li>
+
+                            </ul>
+                          </div>
+                        
+                        <div class="color-choice">
+                          
                             <div class="color-block setted">
                               <button data-source="top::tshirt" class="pick-color" type="button">
                                 <span class="color" style="background-color: rgb(255, 255, 255);"></span>
@@ -296,7 +321,7 @@
                               </button>
                               <input type="hidden" value="#fff" name="bottom[shorts][color][]">
                             </div>
-                            <button class="switch" type="button"></button>
+                            <button class="switch switch--vertical" type="button"></button>
                             <div class="color-block setted">
                               <button data-source="top::tshirt" class="pick-color" type="button">
                                 <span class="color" style="background-color: rgb(255, 255, 255);"></span>
@@ -304,10 +329,11 @@
                               </button>
                               <input type="hidden" value="#fff" name="bottom[shorts][color][]">
                             </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                         
+                        
+                      </div>
+                    </div>
+                    </div>
                   </form>
                 </div>
                 <div class="total-wrp">

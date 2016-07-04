@@ -2914,6 +2914,7 @@ h2, h3 {
 .choice {
   vertical-align: top;
   text-align: center;
+  display: inline-block;
 }
 
 .choice img {
@@ -2932,6 +2933,10 @@ h2, h3 {
 #constructor .shirtInserts td.checkbox-dyn {
   padding-left: 0;
   padding-right: 0;
+}
+
+.tshirt-preview {
+  display: none;
 }
 
 .short-preview {

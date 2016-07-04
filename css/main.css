@@ -181,7 +181,7 @@ table {
 }
 .icon-price-tag, #constructor .tag {
     height: 119px;
-    width: 270px;
+    min-width: 270px;
 }
 
 .icon-question, .prefooter .questions::before {
@@ -2984,6 +2984,21 @@ h2, h3 {
 .tshirt-slider__nav--next {
   right: -35px;
   transform: rotate(180deg);
+}
+
+.form-screen--first {
+  position: relative;
+}
+
+#constructor .total-wrp--first {
+  position: absolute;
+  left: -320px;
+  bottom: -15px;
+  padding-top: 0;
+}
+
+.empty {
+  height: 100px;
 }
 
 

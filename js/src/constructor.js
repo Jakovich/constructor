@@ -21,8 +21,8 @@
     	init: function() {
             //fancy.init();
             form.init();
-            color.init();
-
+            //color.init();
+         
             var $preview = $('.preview');
             $preview.stick_in_parent({
                 offset_bottom: 0,
@@ -249,13 +249,17 @@
     * INITIALIZE COLORBOX
     */
     
-    var color = {
+    /*var color = {
       init: function() {
         $(".select-popup").colorbox({ 
           opacity: 0.5
         });
       }
-    }
+    }*/
+    
+
+    
+   
 
   $(document).ready(app.init)
 

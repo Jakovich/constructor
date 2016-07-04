@@ -367,6 +367,7 @@
 			_this.$element.find('.step').eq(0).replaceWith($newStep);
 			$('#top-svg').attr('d', _this.step1Svg);
 			_this.makeDefProt();
+            htmSlider();
 		});
 
 		this.$element.on('click', '.default-step-2', function() {
@@ -507,7 +508,7 @@
 				$('.'+targetName+'-img-inp').attr('value', $img);
 				$('.'+targetName+'-input').attr('value', elementId);
 				//$.fancybox.close();
-                $.colorbox.close()
+                //$.colorbox.close()
 				_this.changeMaket();
 			}
 		});
@@ -787,7 +788,7 @@
 		});
 
 	};
-
+  
 
 	/**
 	 * Возвращаем все на круги своя
@@ -855,5 +856,57 @@
 			return returns !== undefined ? returns : this;
 		}
 	};
+  
+  //слайдер
+  
+  function htmSlider(){
+        
+      
+        var slideWrap = $('.tshirt-slider__wrapper');
+     
+        var nextLink = $('.tshirt-slider__nav--next');
+        var prevLink = $('.tshirt-slider__nav--prev');
+        var playLink = $('.auto');
+       
+        var is_animate = false;
+     
+        var slideWidth = $('.tshirt-slider__wrapper li').outerWidth();
+     
+        var scrollSlider = slideWrap.position().left - slideWidth;
+	     	
+    
+        nextLink.click(function(){
+         if(!slideWrap.is(':animated')) {
+          slideWrap.animate({left: scrollSlider}, 500, function(){
+           slideWrap
+            .find('li:first')
+            .appendTo(slideWrap)
+            .parent()
+            .css({'left': 0});
+          });
+         }
+        });
+
+     
+        prevLink.click(function(){
+         if(!slideWrap.is(':animated')) {
+          slideWrap
+           .css({'left': scrollSlider})
+           .find('li:last')
+           .prependTo(slideWrap)
+           .parent()
+           .animate({left: 0}, 500);
+         }
+        });
+        }
+  
+  /* иницилизируем функцию слайдера */
+    $(document).ready(function(){
+      htmSlider();
+    })
+                    
+  
+        
+        
 
 }(jQuery, window, document));

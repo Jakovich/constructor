@@ -1149,7 +1149,6 @@ main .content h2 {
     border: 0 none;
 }
 #constructor .select-row td {
-    border-bottom: 1px dashed #ddd;
     padding: 10px 10px;
     vertical-align: top;
 }
@@ -2937,6 +2936,49 @@ h2, h3 {
 
 .short-preview {
   display: none;
+}
+
+/*slider*/
+
+.tshirt-slider {
+  width: 980px;
+  position: relative;
+}
+
+.tshirt-slider::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
+.tshirt-slider::selection { background: transparent; color: #fff; text-shadow: none; }
+
+.tshirt-slider__items {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.tshirt-slider__wrapper {
+  position: relative;
+  padding: 4px;
+  left: 0;
+  top: 0;
+  width: 10000000px;
+}
+
+.tshirt-slider__nav {
+  position: absolute;
+  width: 31px;
+  height: 55px;
+  top: 90px;
+  background-image: url("../img/icon-arrow.png");
+  cursor: pointer;
+}
+
+.tshirt-slider__nav--prev {
+  left: -40px;
+}
+
+.tshirt-slider__nav--next {
+  right: -35px;
+  transform: rotate(180deg);
 }
 
 

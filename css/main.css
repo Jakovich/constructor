@@ -164,7 +164,7 @@ table {
 }
 .icon-price-tag, #constructor .tag {
     height: 119px;
-    width: 228px;
+    width: 270px;
 }
 
 .icon-question, .prefooter .questions::before {
@@ -1231,7 +1231,7 @@ main .content h2 {
     
 }
 #constructor .tag .description {
-    
+    display: block;
     line-height: 1.2em;
     margin-bottom: 15px;
     margin-top: 10px;
@@ -2888,6 +2888,10 @@ h2, h3 {
   background-position: -75px -25px;
 }
 
+
+.choice {
+  vertical-align: top;
+}
 
 
 @media screen and (max-width: 910px) {

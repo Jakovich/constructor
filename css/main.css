@@ -1024,7 +1024,7 @@ main .content h2 {
     margin-top: 40px;
     min-height: 500px;
     position: relative;
-    padding: 0 10px;
+    padding: 0 40px;
 }
 #constructor.hidden {
     display: none;
@@ -2991,7 +2991,7 @@ h2, h3 {
   transform: rotate(180deg);
 }
 
-.form-screen--first {
+.form-screen {
   position: relative;
 }
 
@@ -3000,6 +3000,21 @@ h2, h3 {
   left: -320px;
   bottom: -15px;
   padding-top: 0;
+}
+
+#constructor .total-wrp--second {
+  position: absolute;
+  left: -380px;
+  bottom: -15px;
+  padding-top: 0;
+}
+
+#constructor .total-wrp--third {
+  position: absolute;
+  left: -380px;
+  bottom: -65px;
+  padding-top: 0;
+
 }
 
 .empty {

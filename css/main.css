@@ -1123,19 +1123,20 @@ main .content h2 {
 /*#constructor .select-row {
     width: 740px;
 }*/
-#constructor .select-row td:nth-child(2) {
+/*#constructor .select-row td:nth-child(2) {
     max-width: 150px;
-}
+}*/
 #constructor .select-row tr:last-child td {
     border: 0 none;
 }
 #constructor .select-row td {
     border-bottom: 1px dashed #ddd;
-    padding: 20px 10px;
+    padding: 10px 10px;
+    vertical-align: top;
 }
 #constructor .color-block {
     display: inline-block;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 #constructor .color-block .title {
     color: #707070;
@@ -1194,11 +1195,11 @@ main .content h2 {
 #constructor .goPrevSection {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 0 none;
-    top: 32px;
+    top: 35px;
     color: #ffffff;
     font-size: 16px;
     background-color: #8ec63f;
-    padding: 10px 25px;
+    padding: 8px 17px;
     border-radius: 25px;
     font-weight: normal;
     
@@ -1224,6 +1225,7 @@ main .content h2 {
     color: #000;
     display: inline-block;
     padding: 15px;
+    padding-left: 0;
     text-decoration: none;
 }
 #constructor .tag span {
@@ -2891,6 +2893,12 @@ h2, h3 {
 
 .choice {
   vertical-align: top;
+  text-align: center;
+}
+
+.choice img {
+  display: block;
+  margin: 0 auto;
 }
 
 

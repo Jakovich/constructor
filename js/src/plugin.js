@@ -367,7 +367,7 @@
 			_this.$element.find('.step').eq(0).replaceWith($newStep);
 			$('#top-svg').attr('d', _this.step1Svg);
 			_this.makeDefProt();
-            htmSlider();
+            loadTshirts();
 		});
 
 		this.$element.on('click', '.default-step-2', function() {
@@ -375,7 +375,7 @@
 			_this.$element.find('.step').eq(1).replaceWith($newStep);
 			$('#bottom-svg').attr('d', _this.step2Svg);
 			_this.makeDefProt();
-
+            loadShorts();
 		});
 
 		_this.options.afterInit();
@@ -902,8 +902,22 @@
   
   /* иницилизируем функцию слайдера */
     $(document).ready(function(){
-      htmSlider();
+      loadShorts();
+      loadTshirts();
     })
+    
+    
+  
+  var loadTshirts = function() {
+     $('.tshirt-slider__items').load('top.html', function() {
+     $('.tshirt-slider__items').find('ul').addClass('tshirt-slider__wrapper');
+     htmSlider();
+   });
+  }
+  
+  var loadShorts = function() {
+    $('.select-shorts').load('bottom.html');
+  }
                     
   
         

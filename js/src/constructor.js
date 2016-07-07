@@ -197,7 +197,10 @@
     }
 
   
-    
+    $('.select-shorts').load('bottom.html');
+   $('.tshirt-slider__items').load('top.html', function() {
+     $('.tshirt-slider__items').find('ul').addClass('tshirt-slider__wrapper')
+   });
 
     
    

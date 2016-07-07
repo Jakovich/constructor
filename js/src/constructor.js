@@ -97,14 +97,14 @@
                             runtimes : 'html5,flash,silverlight,html4',
                             browse_button: 'pickfiles', // you can pass in id...
                             container: document.getElementById('file-container'), // ... or DOM Element itself
-                            url: 'http://www.artsport.spb.ru/upload.php',
-                            flash_swf_url: 'http://www.artsport.spb.ru/js/plupload/Moxie.swf',
+                            url: '#',
+                            flash_swf_url: '#',
                             unique_names: true,
                             rename: true,
                             max_file_count: 3,
                             multi_selection: true,
                             multiple_queues: true,
-                            silverlight_xap_url: 'http://www.artsport.spb.ru/js/plupload/Moxie.xap',
+                            silverlight_xap_url: '#',
                             filters: {
                                 max_file_size: '5mb',
                                 mime_types: [{
@@ -196,66 +196,7 @@
         }
     }
 
-    /**
-    * INITIALIZE FANCYBOX
-    */
-    
-    
-    /*var fancy = {
-        fancyAddDots: function() {
-                if(this.group.length < 2) return;
-                var list = $("#fancy-dots");
-                if (!list.length) {
-                    list = $('<ul id="fancy-dots">');
-                    for (var i = 0; i < this.group.length; i++) {
-                        $('<li data-index="' + i + '"><label></label></li>').click(function() { $.fancybox.jumpto( $(this).data('index'));}).appendTo( list );
-                    }
-                    list.appendTo( 'body' );
-                }
-                list.find('li').removeClass('active').eq( this.index ).addClass('active');
-        },
-        fancyRemoveDots: function() {
-            $("#fancy-dots").remove();
-        },
-        init: function() {
-            $('.zoom').fancybox({
-                padding : 0,
-                margin: 40,
-                afterLoad   : fancy.fancyAddDots,
-                beforeClose : fancy.fancyRemoveDots
-            });
-
-            $('.ajax-load').fancybox({
-                padding : 0,
-                margin: 40,
-                type: 'ajax',
-                afterShow: form.init
-            });
-
-            $('.select-popup').fancybox({
-                width: 900,
-                padding : 0,
-                margin: 40,
-                fitToView: false,
-                autoSize: true,
-                type: 'ajax',
-                afterShow: form.init
-            });
-
-        }
-    }*/
-    
-    /**
-    * INITIALIZE COLORBOX
-    */
-    
-    /*var color = {
-      init: function() {
-        $(".select-popup").colorbox({ 
-          opacity: 0.5
-        });
-      }
-    }*/
+  
     
 
     
